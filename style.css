@@ -1,0 +1,153 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #605454;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #f4f4f2;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+}
+
+#name {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    text-align: center;
+}
+
+/* Heading styling */
+.Heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Sudoku grid styling */
+.sudoku_grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 578px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sudoku_grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #000000;
+    font-size: 35px;
+    box-sizing: border-box;
+}
+
+/* Buttons styling */
+.Buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#GetPuzzle, #SolvePuzzle {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #007bff;
+    padding: 10px 35px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+/* Buttons styling continued */
+transition: background-color 0.3s, color 0.3s;
+}
+
+#GetPuzzle:hover, #SolvePuzzle:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Box styling */
+.box1 {
+    background-color: #4a90e2; /* Light blue */
+    border: 2px solid #000;
+}
+
+.box1:hover {
+    background-color: #003d6c; /* Darker blue */
+    color: #fff;
+}
+
+.box2 {
+    background-color: #f5a623; /* Orange */
+    border: 2px solid #000;
+}
+
+.box2:hover {
+    background-color: #d47c00; /* Darker orange */
+    color: #fff;
+}
+
+.box3 {
+    background-color: #7ed321; /* Green */
+    border: 2px solid #000;
+}
+
+.box3:hover {
+    background-color: #4a9e1b; /* Darker green */
+    color: #fff;
+}
+
+/* Border classes for the Sudoku grid */
+.bl {
+    border-left: 4px solid #000;
+}
+
+.bb {
+    border-bottom: 4px solid #000;
+}
+
+.br {
+    border-right: 4px solid #000;
+}
+
+.bt {
+    border-top: 4px solid #000;
+}
